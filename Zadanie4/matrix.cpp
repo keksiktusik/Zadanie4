@@ -125,7 +125,9 @@ matrix& matrix::losuj() {
     return *this;
 }
 
-// Wypisanie macierzy
+/*! Wypisanie macierzy
+* Metoda wypisania wartoœci macierzy.
+*/ 
 std::ostream& operator<<(std::ostream& os, const matrix& m) {
     for (int i = 0; i < m.n; ++i) {
         for (int j = 0; j < m.n; ++j) {
