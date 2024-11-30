@@ -100,7 +100,9 @@ int matrix::pokaz(int x, int y) {
     return data[x][y];
 }
 
-// Transponowanie macierzy
+/*! /breif Odwrucenia macierzy 
+* Metoda która przenosi wszystkie wartoœæ zaposisane pod konkrentym indexami [i,j] tak by by³y zapisane pod indexami [j, i]
+*/
 matrix& matrix::dowroc() {
     for (int i = 0; i < n; ++i) {
         for (int j = i + 1; j < n; ++j) {
