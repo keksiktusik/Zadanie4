@@ -69,7 +69,9 @@ matrix::~matrix() {
     freeMemory();
 }
 
-// Alokacja pamiêci
+/*! Alokacja pamiêci
+* metoda alokacji pamiêci która wype³nia tablice danymi poprzez iteracyjne wywo³ywanie metody alocateMemory z argumentem rozmiaru
+*/ 
 matrix& matrix::alokuj(int size) {
     if (!data || n != size) {
         allocateMemory(size);
