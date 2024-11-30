@@ -38,7 +38,7 @@ matrix::matrix(int n) : n(n), data(nullptr) {
     allocateMemory(n);
 }
 
-/*! /brief Konstruktor z tabel¹
+/*! Konstruktor z tabel¹
 * Definicja konstruktora która jest urzywana je¿eli jest przekazany jeden argument typu int i wskaŸnik typu int,
 jest on u¿ywany je¿eli jest przekazywana tabela w wywo³aniu klasy
 */ 
@@ -51,7 +51,7 @@ matrix::matrix(int n, int* t) : n(n), data(nullptr) {
     }
 }
 
-/*! /brief Konstruktor kopiuj¹cy
+/*! Konstruktor kopiuj¹cy
 * Definicja konstruktora która jest urzywana je¿eli w argumencie jest przekazana osobna instancja klasy, w tym przypadku dane w niej zawarte s¹ kopiowane do nowej instancji 
 */ 
 matrix::matrix(const matrix& m) : n(m.n), data(nullptr) {
@@ -62,16 +62,14 @@ matrix::matrix(const matrix& m) : n(m.n), data(nullptr) {
         }
     }
 }
-/*! /brief Destruktor
+/*! Destruktor
 * Definicja destruktora klasy która wywo³uje metode freeMemory
 */ 
 matrix::~matrix() {
     freeMemory();
 }
 
-/*! /brief Alokacja pamiêci
-* metoda alokacji pamiêci która wype³nia tablice danymi poprzez iteracyjne wywo³ywanie metody alocateMemory z argumentem rozmiaru
-*/ 
+// Alokacja pamiêci
 matrix& matrix::alokuj(int size) {
     if (!data || n != size) {
         allocateMemory(size);
@@ -79,9 +77,7 @@ matrix& matrix::alokuj(int size) {
     return *this;
 }
 
-/*! /brief Wstawianie wartoœci
-* Metoda wstawiania przekazanej wartoœci pod wskazany index 
-*/ 
+// Wstawianie wartoœci
 matrix& matrix::wstaw(int x, int y, int wartosc) {
     if (x < 0 || x >= n || y < 0 || y >= n) {
         throw std::out_of_range("Index out of range");
@@ -90,9 +86,7 @@ matrix& matrix::wstaw(int x, int y, int wartosc) {
     return *this;
 }
 
-/*! /brief Pobieranie wartoœci
-* Metoda zwracaj¹ca wartoœæ pod wskazanym indexem
-*/ 
+// Pobieranie wartoœci
 int matrix::pokaz(int x, int y) {
     if (x < 0 || x >= n || y < 0 || y >= n) {
         throw std::out_of_range("Index out of range");
@@ -100,9 +94,7 @@ int matrix::pokaz(int x, int y) {
     return data[x][y];
 }
 
-/*! /brief Transponowanie macierzy 
-* Metoda która przenosi wszystkie wartoœæ zaposisane pod konkrentym indexami [i,j] tak by by³y zapisane pod indexami [j, i]
-*/
+// Transponowanie macierzy
 matrix& matrix::dowroc() {
     for (int i = 0; i < n; ++i) {
         for (int j = i + 1; j < n; ++j) {
@@ -112,9 +104,7 @@ matrix& matrix::dowroc() {
     return *this;
 }
 
-/*! Losowanie wartoœci
-* Metoda wype³niaj¹ca tablice losowymi wartoœciami
-*/ 
+// Losowanie wartoœci
 matrix& matrix::losuj() {
     std::srand(std::time(nullptr));
     for (int i = 0; i < n; ++i) {
@@ -125,9 +115,7 @@ matrix& matrix::losuj() {
     return *this;
 }
 
-/*! Wypisanie macierzy
-* Metoda wypisuj¹ca wartoœci zapisane na macierzy
-*/ 
+// Wypisanie macierzy
 std::ostream& operator<<(std::ostream& os, const matrix& m) {
     for (int i = 0; i < m.n; ++i) {
         for (int j = 0; j < m.n; ++j) {
