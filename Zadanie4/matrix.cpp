@@ -79,7 +79,9 @@ matrix& matrix::alokuj(int size) {
     return *this;
 }
 
-// Wstawianie wartoœci
+/*! Wstawianie wartoœci
+* Metoda wstawiania przekazanej wartoœci pod wskazany index 
+*/ 
 matrix& matrix::wstaw(int x, int y, int wartosc) {
     if (x < 0 || x >= n || y < 0 || y >= n) {
         throw std::out_of_range("Index out of range");
