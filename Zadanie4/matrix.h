@@ -10,11 +10,14 @@
 
 class matrix {
 private:
-    int n;         // Rozmiar macierzy n x n
-    int** data;    // Dynamiczna alokacja danych macierzy
-
-    void freeMemory();  // Pomocnicza metoda do zwalniania pamiêci
-    void allocateMemory(int size); // Pomocnicza metoda do alokacji pamiêci
+    /// Rozmiar macierzy n x n
+    int n;         
+    /// Dynamiczna alokacja danych macierzy
+    int** data;    
+    /// Pomocnicza metoda do zwalniania pamiêci
+    void freeMemory();  
+    /// Pomocnicza metoda do alokacji pamiêci
+    void allocateMemory(int size); 
 
 public:
     matrix();                      // Konstruktor domyœlny
