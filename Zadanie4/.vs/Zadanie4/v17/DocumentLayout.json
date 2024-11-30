@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Projects\\Zadanie4\\Zadanie4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A9FD49C7-5BA6-4354-BD09-FDD835720310}|Zadanie4.vcxproj|C:\\Projects\\Zadanie4\\Zadanie4\\Zadanie4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A9FD49C7-5BA6-4354-BD09-FDD835720310}|Zadanie4.vcxproj|solutionrelative:Zadanie4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A9FD49C7-5BA6-4354-BD09-FDD835720310}|Zadanie4.vcxproj|C:\\Projects\\Zadanie4\\Zadanie4\\matrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A9FD49C7-5BA6-4354-BD09-FDD835720310}|Zadanie4.vcxproj|solutionrelative:matrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FD49C7-5BA6-4354-BD09-FDD835720310}|Zadanie4.vcxproj|C:\\Projects\\Zadanie4\\Zadanie4\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A9FD49C7-5BA6-4354-BD09-FDD835720310}|Zadanie4.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9FD49C7-5BA6-4354-BD09-FDD835720310}|Zadanie4.vcxproj|C:\\Projects\\Zadanie4\\Zadanie4\\matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A9FD49C7-5BA6-4354-BD09-FDD835720310}|Zadanie4.vcxproj|solutionrelative:matrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,25 +41,49 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Zadanie4.cpp",
-              "DocumentMoniker": "C:\\Projects\\Zadanie4\\Zadanie4\\Zadanie4.cpp",
-              "RelativeDocumentMoniker": "Zadanie4.cpp",
-              "ToolTip": "C:\\Projects\\Zadanie4\\Zadanie4\\Zadanie4.cpp",
-              "RelativeToolTip": "Zadanie4.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-28T08:47:39.287Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "matrix.h",
+              "DocumentMoniker": "C:\\Projects\\Zadanie4\\Zadanie4\\matrix.h",
+              "RelativeDocumentMoniker": "matrix.h",
+              "ToolTip": "C:\\Projects\\Zadanie4\\Zadanie4\\matrix.h",
+              "RelativeToolTip": "matrix.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-30T15:09:30.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "matrix.cpp",
+              "DocumentMoniker": "C:\\Projects\\Zadanie4\\Zadanie4\\matrix.cpp",
+              "RelativeDocumentMoniker": "matrix.cpp",
+              "ToolTip": "C:\\Projects\\Zadanie4\\Zadanie4\\matrix.cpp",
+              "RelativeToolTip": "matrix.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-30T15:09:29.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Projects\\Zadanie4\\Zadanie4\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Projects\\Zadanie4\\Zadanie4\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-30T15:09:25.478Z"
             }
           ]
         }

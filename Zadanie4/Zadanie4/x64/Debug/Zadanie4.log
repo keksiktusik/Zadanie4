@@ -1,0 +1,5 @@
+﻿  main.cpp
+  matrix.cpp
+  Generowanie kodu...
+C:\Projects\Zadanie4\Zadanie4\main.cpp(2,10): error C1083: Nie można otworzyć pliku dołącz: 'matrix.h': No such file or directory
+C:\Projects\Zadanie4\Zadanie4\matrix.cpp(1,10): error C1083: Nie można otworzyć pliku dołącz: 'matrix.h': No such file or directory
