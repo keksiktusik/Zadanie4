@@ -1,6 +1,8 @@
 #include "matrix.h"
 
-// Pomocnicze funkcje
+/*! /brief Funkcja Zwalniaj¹ca pamiêæ
+* Funkcja ta zwalnia pamiêæ ca³ej tablicy z urzyciem warunkowej iteracji, warunkiem jest to ¿e zmienna data nie jest pusta
+*/
 void matrix::freeMemory() {
     if (data) {
         for (int i = 0; i < n; ++i) {
@@ -11,6 +13,10 @@ void matrix::freeMemory() {
     }
 }
 
+/*! /brief Funkcja zape³niaj¹ca pamiêæ tablicy
+* Funkcja zape³nia pamiêæ ca³ej tablicy z urzyciem iteracji,
+kod jest powtarzany a¿ do osi¹gniêcia limitu pamiêci przekazanego jako argument tej funkcji
+*/
 void matrix::allocateMemory(int size) {
     freeMemory();
     n = size;
