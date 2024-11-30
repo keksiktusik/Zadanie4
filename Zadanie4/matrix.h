@@ -20,10 +20,14 @@ private:
     void allocateMemory(int size); 
 
 public:
-    matrix();                      // Konstruktor domyœlny
-    matrix(int n);                 // Konstruktor o wymiarach n x n
-    matrix(int n, int* t);         // Konstruktor z tabel¹ danych
-    matrix(const matrix& m);       // Konstruktor kopiuj¹cy
+    /// Konstruktor domyœlny
+    matrix();                     
+    /// Konstruktor o wymiarach n x n
+    matrix(int n);               
+    /// Konstruktor z tabel¹ danych
+    matrix(int n, int* t);       
+    /// Konstruktor kopiuj¹cy
+    matrix(const matrix& m);       
     ~matrix();                     // Destruktor
 
     matrix& alokuj(int n);         // Alokacja pamiêci
