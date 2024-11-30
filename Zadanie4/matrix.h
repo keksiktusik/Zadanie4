@@ -49,13 +49,20 @@ public:
     matrix& diagonalna_k(int k, int* t); 
 
     // Operatory
-    matrix& operator+(matrix& m);  // Dodawanie macierzy
-    matrix& operator*(matrix& m);  // Mno¿enie macierzy
-    matrix& operator+(int a);      // Dodawanie liczby
-    matrix& operator*(int a);      // Mno¿enie przez liczbê
-    bool operator==(const matrix& m) const; // Porównanie równoœci
-    bool operator>(const matrix& m) const;  // Porównanie wielkoœci
-    bool operator<(const matrix& m) const;  // Porównanie mniejszoœci
+    /// Dodawanie macierzy
+    matrix& operator+(matrix& m);  
+    /// Mno¿enie macierzy
+    matrix& operator*(matrix& m);  
+    /// Dodawanie liczby
+    matrix& operator+(int a);      
+    /// Mno¿enie przez liczbê
+    matrix& operator*(int a);      
+    /// Porównanie równoœci
+    bool operator==(const matrix& m) const; 
+    /// Porównanie wielkoœci
+    bool operator>(const matrix& m) const;  
+    /// Porównanie mniejszoœci
+    bool operator<(const matrix& m) const;  
 
     friend std::ostream& operator<<(std::ostream& os, const matrix& m); // Wypisanie macierzy
 };
