@@ -28,7 +28,8 @@ public:
     matrix(int n, int* t);       
     /// Konstruktor kopiuj¹cy
     matrix(const matrix& m);       
-    ~matrix();                     // Destruktor
+    /// Destruktor
+    ~matrix();                     
 
     matrix& alokuj(int n);         // Alokacja pamiêci
     matrix& wstaw(int x, int y, int wartosc);  // Wstawianie wartoœci
