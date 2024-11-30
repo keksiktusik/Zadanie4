@@ -38,7 +38,7 @@ matrix::matrix(int n) : n(n), data(nullptr) {
     allocateMemory(n);
 }
 
-/*! Konstruktor z tabel¹
+/*! /brief Konstruktor z tabel¹
 * Definicja konstruktora która jest urzywana je¿eli jest przekazany jeden argument typu int i wskaŸnik typu int,
 jest on u¿ywany je¿eli jest przekazywana tabela w wywo³aniu klasy
 */ 
@@ -51,7 +51,7 @@ matrix::matrix(int n, int* t) : n(n), data(nullptr) {
     }
 }
 
-/*! Konstruktor kopiuj¹cy
+/*! /brief Konstruktor kopiuj¹cy
 * Definicja konstruktora która jest urzywana je¿eli w argumencie jest przekazana osobna instancja klasy, w tym przypadku dane w niej zawarte s¹ kopiowane do nowej instancji 
 */ 
 matrix::matrix(const matrix& m) : n(m.n), data(nullptr) {
@@ -62,14 +62,14 @@ matrix::matrix(const matrix& m) : n(m.n), data(nullptr) {
         }
     }
 }
-/*! Destruktor
+/*! /brief Destruktor
 * Definicja destruktora klasy która wywo³uje metode freeMemory
 */ 
 matrix::~matrix() {
     freeMemory();
 }
 
-/*! Alokacja pamiêci
+/*! /brief Alokacja pamiêci
 * metoda alokacji pamiêci która wype³nia tablice danymi poprzez iteracyjne wywo³ywanie metody alocateMemory z argumentem rozmiaru
 */ 
 matrix& matrix::alokuj(int size) {
@@ -79,7 +79,7 @@ matrix& matrix::alokuj(int size) {
     return *this;
 }
 
-/*! Wstawianie wartoœci
+/*! /brief Wstawianie wartoœci
 * Metoda wstawiania przekazanej wartoœci pod wskazany index 
 */ 
 matrix& matrix::wstaw(int x, int y, int wartosc) {
@@ -90,7 +90,9 @@ matrix& matrix::wstaw(int x, int y, int wartosc) {
     return *this;
 }
 
-// Pobieranie wartoœci
+/*! /brief Pobieranie wartoœci
+* Metoda zwracaj¹ca wartoœæ pod wskazanym indexem
+*/ 
 int matrix::pokaz(int x, int y) {
     if (x < 0 || x >= n || y < 0 || y >= n) {
         throw std::out_of_range("Index out of range");
