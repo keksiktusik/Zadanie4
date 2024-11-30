@@ -59,3 +59,52 @@ matrix& matrix::alokuj(int size) {
     }
     return *this;
 }
+
+// Wstawianie wartoœci
+matrix& matrix::wstaw(int x, int y, int wartosc) {
+    if (x < 0 || x >= n || y < 0 || y >= n) {
+        throw std::out_of_range("Index out of range");
+    }
+    data[x][y] = wartosc;
+    return *this;
+}
+
+// Pobieranie wartoœci
+int matrix::pokaz(int x, int y) {
+    if (x < 0 || x >= n || y < 0 || y >= n) {
+        throw std::out_of_range("Index out of range");
+    }
+    return data[x][y];
+}
+
+// Transponowanie macierzy
+matrix& matrix::dowroc() {
+    for (int i = 0; i < n; ++i) {
+        for (int j = i + 1; j < n; ++j) {
+            std::swap(data[i][j], data[j][i]);
+        }
+    }
+    return *this;
+}
+
+// Losowanie wartoœci
+matrix& matrix::losuj() {
+    std::srand(std::time(nullptr));
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            data[i][j] = std::rand() % 10;
+        }
+    }
+    return *this;
+}
+
+// Wypisanie macierzy
+std::ostream& operator<<(std::ostream& os, const matrix& m) {
+    for (int i = 0; i < m.n; ++i) {
+        for (int j = 0; j < m.n; ++j) {
+            os << m.data[i][j] << " ";
+        }
+        os << "\n";
+    }
+    return os;
+}
