@@ -112,7 +112,9 @@ matrix& matrix::dowroc() {
     return *this;
 }
 
-// Losowanie wartoœci
+/*! Losowanie wartoœci
+* Metoda wype³niania macierzy losowymi wartoœciami.
+*/ 
 matrix& matrix::losuj() {
     std::srand(std::time(nullptr));
     for (int i = 0; i < n; ++i) {
