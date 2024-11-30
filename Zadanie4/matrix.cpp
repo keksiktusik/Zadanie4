@@ -47,3 +47,15 @@ matrix::matrix(const matrix& m) : n(m.n), data(nullptr) {
         }
     }
 }
+// Destruktor
+matrix::~matrix() {
+    freeMemory();
+}
+
+// Alokacja pamiêci
+matrix& matrix::alokuj(int size) {
+    if (!data || n != size) {
+        allocateMemory(size);
+    }
+    return *this;
+}
