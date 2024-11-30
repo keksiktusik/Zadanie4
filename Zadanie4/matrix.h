@@ -64,7 +64,8 @@ public:
     /// Porównanie mniejszoœci
     bool operator<(const matrix& m) const;  
 
-    friend std::ostream& operator<<(std::ostream& os, const matrix& m); // Wypisanie macierzy
+    /// Wypisanie macierzy
+    friend std::ostream& operator<<(std::ostream& os, const matrix& m); 
 };
 
 #endif
