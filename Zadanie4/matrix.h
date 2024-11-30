@@ -31,14 +31,22 @@ public:
     /// Destruktor
     ~matrix();                     
 
-    matrix& alokuj(int n);         // Alokacja pamiêci
-    matrix& wstaw(int x, int y, int wartosc);  // Wstawianie wartoœci
-    int pokaz(int x, int y);       // Pobieranie wartoœci
-    matrix& dowroc();              // Transponowanie macierzy
-    matrix& losuj();               // Losowe wype³nienie macierzy
-    matrix& losuj(int x);          // Losowe wype³nienie czêœci macierzy
-    matrix& diagonalna(int* t);    // Macierz diagonalna
-    matrix& diagonalna_k(int k, int* t); // Przek¹tna przesuniêta
+    /// Alokacja pamiêci
+    matrix& alokuj(int n);         
+    /// Wstawianie wartoœci
+    matrix& wstaw(int x, int y, int wartosc); 
+    /// Pobieranie wartoœci
+    int pokaz(int x, int y);       
+    /// Transponowanie macierzy
+    matrix& dowroc();              
+    /// Losowe wype³nienie macierzy
+    matrix& losuj();              
+    /// Losowe wype³nienie czêœci macierzy
+    matrix& losuj(int x);         
+    /// Macierz diagonalna
+    matrix& diagonalna(int* t);    
+    /// Przek¹tna przesuniêta
+    matrix& diagonalna_k(int k, int* t); 
 
     // Operatory
     matrix& operator+(matrix& m);  // Dodawanie macierzy
