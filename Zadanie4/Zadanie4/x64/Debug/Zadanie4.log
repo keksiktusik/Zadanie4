@@ -1,5 +1,5 @@
 ﻿  main.cpp
   matrix.cpp
+C:\Projects\Zadanie4\Zadanie4\matrix.cpp(158,25): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
   Generowanie kodu...
-C:\Projects\Zadanie4\Zadanie4\main.cpp(2,10): error C1083: Nie można otworzyć pliku dołącz: 'matrix.h': No such file or directory
-C:\Projects\Zadanie4\Zadanie4\matrix.cpp(1,10): error C1083: Nie można otworzyć pliku dołącz: 'matrix.h': No such file or directory
+  Zadanie4.vcxproj -> C:\Projects\Zadanie4\Zadanie4\x64\Debug\Zadanie4.exe
