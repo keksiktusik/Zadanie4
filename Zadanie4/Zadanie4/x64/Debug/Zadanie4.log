@@ -1,5 +1,0 @@
-﻿  main.cpp
-  matrix.cpp
-C:\Projects\Zadanie4\Zadanie4\matrix.cpp(158,25): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
-  Generowanie kodu...
-  Zadanie4.vcxproj -> C:\Projects\Zadanie4\Zadanie4\x64\Debug\Zadanie4.exe
