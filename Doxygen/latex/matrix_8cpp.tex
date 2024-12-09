@@ -1,0 +1,49 @@
+\doxysection{Zadanie4/matrix.cpp File Reference}
+\hypertarget{matrix_8cpp}{}\label{matrix_8cpp}\index{Zadanie4/matrix.cpp@{Zadanie4/matrix.cpp}}
+
+
+Implementacja metod klasy {\ttfamily matrix}.  
+
+
+{\ttfamily \#include "{}matrix.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{matrix_8cpp_a3d61d0efa79c5e52a7a5b22bfd140571}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classmatrix}{matrix}} \&m)
+\begin{DoxyCompactList}\small\item\em Operatory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementacja metod klasy {\ttfamily matrix}. 
+
+Plik zawiera definicje funkcji dla klasy {\ttfamily matrix}, takich jak\+:
+\begin{DoxyItemize}
+\item Dynamiczna alokacja i zwalnianie pamiêci ({\ttfamily allocate\+Memory()}, {\ttfamily free\+Memory()}).
+\item Konstruktor i destruktor klasy.
+\item Operacje na macierzy\+: wstawianie, pobieranie, transpozycja, losowanie wartoœci.
+\item Przeci¹¿ony operator do wypisywania macierzy. 
+\end{DoxyItemize}
+
+\doxysubsection{Function Documentation}
+\Hypertarget{matrix_8cpp_a3d61d0efa79c5e52a7a5b22bfd140571}\index{matrix.cpp@{matrix.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!matrix.cpp@{matrix.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{matrix_8cpp_a3d61d0efa79c5e52a7a5b22bfd140571} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classmatrix}{matrix}} \&}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Operatory. 
+
+Wypisuje zawartoœæ macierzy na strumieñ wyjœciowy.
+
+Operator wypisywania macierzy do strumienia. 
+\begin{DoxyParams}{Parameters}
+{\em os} & Strumieñ wyjœciowy. \\
+\hline
+{\em m} & Macierz do wypisania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do strumienia wyjœciowego. 
+\end{DoxyReturn}

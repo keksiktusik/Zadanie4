@@ -1,0 +1,599 @@
+\doxysection{matrix Class Reference}
+\hypertarget{classmatrix}{}\label{classmatrix}\index{matrix@{matrix}}
+
+
+Klasa reprezentuj¹ca kwadratow¹ macierz o dynamicznie alokowanym rozmiarze.  
+
+
+
+
+{\ttfamily \#include $<$matrix.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmatrix_a4daf70b1506ea976352f20e4322a9c17}{matrix}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyœlny. Tworzy pust¹ macierz. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix_a42349ef84ab5a2a1f52801c2a20cdf84}{matrix}} (int n)
+\begin{DoxyCompactList}\small\item\em Konstruktor tworz¹cy macierz o zadanym rozmiarze. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix_aeefd2c5a07176e714e07a73e91ca4e8d}{matrix}} (int n, int \texorpdfstring{$\ast$}{*}t)
+\begin{DoxyCompactList}\small\item\em Konstruktor inicjalizuj¹cy macierz danymi z tablicy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix_aeb5b7bbbc160bb611196ac4a00338165}{matrix}} (const \mbox{\hyperlink{classmatrix}{matrix}} \&m)
+\begin{DoxyCompactList}\small\item\em Konstruktor kopiuj¹cy. Tworzy now¹ macierz na podstawie istniej¹cej. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix_a8a2522496ff0ef7096ffcfdc851b85a1}{\texorpdfstring{$\sim$}{\string~}matrix}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor. Usuwa dynamicznie alokowan¹ pamiêæ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix}{matrix}} \& \mbox{\hyperlink{classmatrix_a7b944bf7f5476dace7ef21b5701fca36}{alokuj}} (int n)
+\begin{DoxyCompactList}\small\item\em Alokuje pamiêæ dla macierzy o zadanym rozmiarze. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix}{matrix}} \& \mbox{\hyperlink{classmatrix_a31963b63c69325251b6c13f8255d9f41}{wstaw}} (int x, int y, int wartosc)
+\begin{DoxyCompactList}\small\item\em Wstawia wartoœæ do okreœlonej komórki macierzy. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmatrix_a94ef42c920c59a1646ba53ed99335c3f}{pokaz}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Pobiera wartoœæ z okreœlonej komórki macierzy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix}{matrix}} \& \mbox{\hyperlink{classmatrix_a8a34328ed63326e518b0a9464669db8b}{dowroc}} ()
+\begin{DoxyCompactList}\small\item\em Transponuje macierz. Zamienia wiersze z kolumnami. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix}{matrix}} \& \mbox{\hyperlink{classmatrix_a6c5c487325c330eb33917febb9b1028e}{losuj}} ()
+\begin{DoxyCompactList}\small\item\em Wype³nia macierz losowymi wartoœciami. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix}{matrix}} \& \mbox{\hyperlink{classmatrix_a935f1073712587900e361af698db437c}{losuj}} (int x)
+\begin{DoxyCompactList}\small\item\em Wype³nia czêœæ macierzy losowymi wartoœciami. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix}{matrix}} \& \mbox{\hyperlink{classmatrix_aab5fade1c48b61a144ad8e25ae4f302a}{diagonalna}} (int \texorpdfstring{$\ast$}{*}t)
+\begin{DoxyCompactList}\small\item\em Tworzy macierz diagonaln¹ na podstawie tablicy wartoœci. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix}{matrix}} \& \mbox{\hyperlink{classmatrix_a08fcafa4e7c0166bb321b517a4222d13}{diagonalna\+\_\+k}} (int k, int \texorpdfstring{$\ast$}{*}t)
+\begin{DoxyCompactList}\small\item\em Tworzy macierz z przesuniêt¹ przek¹tn¹. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix}{matrix}} \& \mbox{\hyperlink{classmatrix_a8326ab4e1686f57ab59a6700a583c2f9}{operator+}} (\mbox{\hyperlink{classmatrix}{matrix}} \&m)
+\begin{DoxyCompactList}\small\item\em Operatory matematyczne. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix}{matrix}} \& \mbox{\hyperlink{classmatrix_a24c54954e216cb172b27ff8e12fe5fd8}{operator\texorpdfstring{$\ast$}{*}}} (\mbox{\hyperlink{classmatrix}{matrix}} \&m)
+\begin{DoxyCompactList}\small\item\em Mno¿y dwie macierze. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix}{matrix}} \& \mbox{\hyperlink{classmatrix_acd9b9ed9da0ebab5e510dd93eaeed60c}{operator+}} (int a)
+\begin{DoxyCompactList}\small\item\em Dodaje liczbê do wszystkich elementów macierzy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmatrix}{matrix}} \& \mbox{\hyperlink{classmatrix_afed596d22e75cad1eaaa6670660ac6d0}{operator\texorpdfstring{$\ast$}{*}}} (int a)
+\begin{DoxyCompactList}\small\item\em Mno¿y wszystkie elementy macierzy przez liczbê. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmatrix_a7300ee81b33a8e8b64ef9ab80ef362ea}{operator==}} (const \mbox{\hyperlink{classmatrix}{matrix}} \&m) const
+\begin{DoxyCompactList}\small\item\em Porównuje, czy dwie macierze s¹ równe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmatrix_aca1131395754db9c051b30ed7dfb4c9a}{operator$>$}} (const \mbox{\hyperlink{classmatrix}{matrix}} \&m) const
+\begin{DoxyCompactList}\small\item\em Porównuje, czy macierz jest wiêksza od innej. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmatrix_abe176d9d9951a3e2c0cf9333ec6c56d9}{operator$<$}} (const \mbox{\hyperlink{classmatrix}{matrix}} \&m) const
+\begin{DoxyCompactList}\small\item\em Porównuje, czy macierz jest mniejsza od innej. \end{DoxyCompactList}\item 
+\Hypertarget{classmatrix_a42349ef84ab5a2a1f52801c2a20cdf84}\label{classmatrix_a42349ef84ab5a2a1f52801c2a20cdf84} 
+{\bfseries matrix} (int n)
+\item 
+\Hypertarget{classmatrix_aeefd2c5a07176e714e07a73e91ca4e8d}\label{classmatrix_aeefd2c5a07176e714e07a73e91ca4e8d} 
+{\bfseries matrix} (int n, int \texorpdfstring{$\ast$}{*}t)
+\item 
+\Hypertarget{classmatrix_aeb5b7bbbc160bb611196ac4a00338165}\label{classmatrix_aeb5b7bbbc160bb611196ac4a00338165} 
+{\bfseries matrix} (const \mbox{\hyperlink{classmatrix}{matrix}} \&m)
+\item 
+\Hypertarget{classmatrix_a7b944bf7f5476dace7ef21b5701fca36}\label{classmatrix_a7b944bf7f5476dace7ef21b5701fca36} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& {\bfseries alokuj} (int n)
+\item 
+\Hypertarget{classmatrix_a31963b63c69325251b6c13f8255d9f41}\label{classmatrix_a31963b63c69325251b6c13f8255d9f41} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& {\bfseries wstaw} (int x, int y, int wartosc)
+\item 
+\Hypertarget{classmatrix_a94ef42c920c59a1646ba53ed99335c3f}\label{classmatrix_a94ef42c920c59a1646ba53ed99335c3f} 
+int {\bfseries pokaz} (int x, int y)
+\item 
+\Hypertarget{classmatrix_a8a34328ed63326e518b0a9464669db8b}\label{classmatrix_a8a34328ed63326e518b0a9464669db8b} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& {\bfseries dowroc} ()
+\item 
+\Hypertarget{classmatrix_a6c5c487325c330eb33917febb9b1028e}\label{classmatrix_a6c5c487325c330eb33917febb9b1028e} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& {\bfseries losuj} ()
+\item 
+\Hypertarget{classmatrix_a935f1073712587900e361af698db437c}\label{classmatrix_a935f1073712587900e361af698db437c} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& {\bfseries losuj} (int x)
+\item 
+\Hypertarget{classmatrix_aab5fade1c48b61a144ad8e25ae4f302a}\label{classmatrix_aab5fade1c48b61a144ad8e25ae4f302a} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& {\bfseries diagonalna} (int \texorpdfstring{$\ast$}{*}t)
+\item 
+\Hypertarget{classmatrix_a08fcafa4e7c0166bb321b517a4222d13}\label{classmatrix_a08fcafa4e7c0166bb321b517a4222d13} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& {\bfseries diagonalna\+\_\+k} (int k, int \texorpdfstring{$\ast$}{*}t)
+\item 
+\Hypertarget{classmatrix_a8326ab4e1686f57ab59a6700a583c2f9}\label{classmatrix_a8326ab4e1686f57ab59a6700a583c2f9} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& {\bfseries operator+} (\mbox{\hyperlink{classmatrix}{matrix}} \&m)
+\item 
+\Hypertarget{classmatrix_a24c54954e216cb172b27ff8e12fe5fd8}\label{classmatrix_a24c54954e216cb172b27ff8e12fe5fd8} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& {\bfseries operator\texorpdfstring{$\ast$}{*}} (\mbox{\hyperlink{classmatrix}{matrix}} \&m)
+\item 
+\Hypertarget{classmatrix_acd9b9ed9da0ebab5e510dd93eaeed60c}\label{classmatrix_acd9b9ed9da0ebab5e510dd93eaeed60c} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& {\bfseries operator+} (int a)
+\item 
+\Hypertarget{classmatrix_afed596d22e75cad1eaaa6670660ac6d0}\label{classmatrix_afed596d22e75cad1eaaa6670660ac6d0} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& {\bfseries operator\texorpdfstring{$\ast$}{*}} (int a)
+\item 
+\Hypertarget{classmatrix_a7300ee81b33a8e8b64ef9ab80ef362ea}\label{classmatrix_a7300ee81b33a8e8b64ef9ab80ef362ea} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classmatrix}{matrix}} \&m) const
+\item 
+\Hypertarget{classmatrix_aca1131395754db9c051b30ed7dfb4c9a}\label{classmatrix_aca1131395754db9c051b30ed7dfb4c9a} 
+bool {\bfseries operator$>$} (const \mbox{\hyperlink{classmatrix}{matrix}} \&m) const
+\item 
+\Hypertarget{classmatrix_abe176d9d9951a3e2c0cf9333ec6c56d9}\label{classmatrix_abe176d9d9951a3e2c0cf9333ec6c56d9} 
+bool {\bfseries operator$<$} (const \mbox{\hyperlink{classmatrix}{matrix}} \&m) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classmatrix_a3d61d0efa79c5e52a7a5b22bfd140571}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classmatrix}{matrix}} \&m)
+\begin{DoxyCompactList}\small\item\em Wypisuje zawartoœæ macierzy na strumieñ wyjœciowy. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classmatrix_a3d61d0efa79c5e52a7a5b22bfd140571}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classmatrix}{matrix}} \&m)
+\begin{DoxyCompactList}\small\item\em Operatory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentuj¹ca kwadratow¹ macierz o dynamicznie alokowanym rozmiarze. 
+
+Klasa {\ttfamily matrix} umo¿liwia\+:
+\begin{DoxyItemize}
+\item Dynamiczne zarz¹dzanie pamiêci¹ dla macierzy.
+\item Manipulacjê wartoœciami w macierzy.
+\item Operacje matematyczne i logiczne.
+\item Tworzenie specjalnych uk³adów, takich jak macierze diagonalne. 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmatrix_a4daf70b1506ea976352f20e4322a9c17}\index{matrix@{matrix}!matrix@{matrix}}
+\index{matrix@{matrix}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{matrix()}{matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classmatrix_a4daf70b1506ea976352f20e4322a9c17} 
+matrix\+::matrix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyœlny. Tworzy pust¹ macierz. 
+
+Implementacja konstruktorów.
+
+Konstruktor domyœlny. Tworzy pust¹ macierz bez alokacji pamiêci. \Hypertarget{classmatrix_a42349ef84ab5a2a1f52801c2a20cdf84}\index{matrix@{matrix}!matrix@{matrix}}
+\index{matrix@{matrix}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{matrix()}{matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classmatrix_a42349ef84ab5a2a1f52801c2a20cdf84} 
+matrix\+::matrix (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor tworz¹cy macierz o zadanym rozmiarze. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Rozmiar macierzy ({\ttfamily n} x {\ttfamily n}). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmatrix_aeefd2c5a07176e714e07a73e91ca4e8d}\index{matrix@{matrix}!matrix@{matrix}}
+\index{matrix@{matrix}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{matrix()}{matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classmatrix_aeefd2c5a07176e714e07a73e91ca4e8d} 
+matrix\+::matrix (\begin{DoxyParamCaption}\item[{int}]{n}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{t}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor inicjalizuj¹cy macierz danymi z tablicy. 
+
+Konstruktor inicjalizuj¹cy macierz danymi z tabeli.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Rozmiar macierzy ({\ttfamily n} x {\ttfamily n}). \\
+\hline
+{\em t} & Tablica jednowymiarowa przechowuj¹ca dane macierzy. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmatrix_aeb5b7bbbc160bb611196ac4a00338165}\index{matrix@{matrix}!matrix@{matrix}}
+\index{matrix@{matrix}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{matrix()}{matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classmatrix_aeb5b7bbbc160bb611196ac4a00338165} 
+matrix\+::matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmatrix}{matrix}} \&}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor kopiuj¹cy. Tworzy now¹ macierz na podstawie istniej¹cej. 
+
+Konstruktor kopiuj¹cy. Tworzy now¹ macierz jako kopiê istniej¹cej.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Macierz do skopiowania. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmatrix_a8a2522496ff0ef7096ffcfdc851b85a1}\index{matrix@{matrix}!````~matrix@{\texorpdfstring{$\sim$}{\string~}matrix}}
+\index{````~matrix@{\texorpdfstring{$\sim$}{\string~}matrix}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}matrix()}{\string~matrix()}}
+{\footnotesize\ttfamily \label{classmatrix_a8a2522496ff0ef7096ffcfdc851b85a1} 
+matrix\+::\texorpdfstring{$\sim$}{\string~}matrix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruktor. Usuwa dynamicznie alokowan¹ pamiêæ. 
+
+Destruktor. Zwalnia dynamicznie alokowan¹ pamiêæ. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmatrix_a7b944bf7f5476dace7ef21b5701fca36}\index{matrix@{matrix}!alokuj@{alokuj}}
+\index{alokuj@{alokuj}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{alokuj()}{alokuj()}}
+{\footnotesize\ttfamily \label{classmatrix_a7b944bf7f5476dace7ef21b5701fca36} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& matrix\+::alokuj (\begin{DoxyParamCaption}\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Alokuje pamiêæ dla macierzy o zadanym rozmiarze. 
+
+Operacje na macierzy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Rozmiar macierzy ({\ttfamily n} x {\ttfamily n}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do obiektu {\ttfamily matrix}.
+\end{DoxyReturn}
+Alokuje pamiêæ dla macierzy o zadanym rozmiarze. Jeœli pamiêæ jest ju¿ zaalokowana, sprawdza rozmiar i alokuje ponownie, jeœli to konieczne. 
+\begin{DoxyParams}{Parameters}
+{\em size} & Rozmiar macierzy ({\ttfamily n} x {\ttfamily n}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do obiektu {\ttfamily matrix}. 
+\end{DoxyReturn}
+\Hypertarget{classmatrix_aab5fade1c48b61a144ad8e25ae4f302a}\index{matrix@{matrix}!diagonalna@{diagonalna}}
+\index{diagonalna@{diagonalna}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{diagonalna()}{diagonalna()}}
+{\footnotesize\ttfamily \label{classmatrix_aab5fade1c48b61a144ad8e25ae4f302a} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& matrix\+::diagonalna (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{t}{}\end{DoxyParamCaption})}
+
+
+
+Tworzy macierz diagonaln¹ na podstawie tablicy wartoœci. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Tablica wartoœci do wstawienia na przek¹tn¹. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do obiektu {\ttfamily matrix}. 
+\end{DoxyReturn}
+\Hypertarget{classmatrix_a08fcafa4e7c0166bb321b517a4222d13}\index{matrix@{matrix}!diagonalna\_k@{diagonalna\_k}}
+\index{diagonalna\_k@{diagonalna\_k}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{diagonalna\_k()}{diagonalna\_k()}}
+{\footnotesize\ttfamily \label{classmatrix_a08fcafa4e7c0166bb321b517a4222d13} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& matrix\+::diagonalna\+\_\+k (\begin{DoxyParamCaption}\item[{int}]{k}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{t}{}\end{DoxyParamCaption})}
+
+
+
+Tworzy macierz z przesuniêt¹ przek¹tn¹. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & Liczba okreœlaj¹ca przesuniêcie (ujemna, zero, dodatnia). \\
+\hline
+{\em t} & Tablica wartoœci do wstawienia na przek¹tn¹. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do obiektu {\ttfamily matrix}. 
+\end{DoxyReturn}
+\Hypertarget{classmatrix_a8a34328ed63326e518b0a9464669db8b}\index{matrix@{matrix}!dowroc@{dowroc}}
+\index{dowroc@{dowroc}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{dowroc()}{dowroc()}}
+{\footnotesize\ttfamily \label{classmatrix_a8a34328ed63326e518b0a9464669db8b} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& matrix\+::dowroc (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Transponuje macierz. Zamienia wiersze z kolumnami. 
+
+\begin{DoxyReturn}{Returns}
+Referencja do obiektu {\ttfamily matrix}. 
+\end{DoxyReturn}
+\Hypertarget{classmatrix_a6c5c487325c330eb33917febb9b1028e}\index{matrix@{matrix}!losuj@{losuj}}
+\index{losuj@{losuj}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{losuj()}{losuj()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classmatrix_a6c5c487325c330eb33917febb9b1028e} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& matrix\+::losuj (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Wype³nia macierz losowymi wartoœciami. 
+
+Wype³nia macierz losowymi wartoœciami z zakresu 0-\/9.
+
+\begin{DoxyReturn}{Returns}
+Referencja do obiektu {\ttfamily matrix}. 
+\end{DoxyReturn}
+\Hypertarget{classmatrix_a935f1073712587900e361af698db437c}\index{matrix@{matrix}!losuj@{losuj}}
+\index{losuj@{losuj}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{losuj()}{losuj()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classmatrix_a935f1073712587900e361af698db437c} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& matrix\+::losuj (\begin{DoxyParamCaption}\item[{int}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Wype³nia czêœæ macierzy losowymi wartoœciami. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Liczba losowych wartoœci do wstawienia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do obiektu {\ttfamily matrix}. 
+\end{DoxyReturn}
+\Hypertarget{classmatrix_afed596d22e75cad1eaaa6670660ac6d0}\index{matrix@{matrix}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classmatrix_afed596d22e75cad1eaaa6670660ac6d0} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& matrix\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{int}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Mno¿y wszystkie elementy macierzy przez liczbê. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Liczba do mno¿enia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wynik operacji jako nowy obiekt {\ttfamily matrix}. 
+\end{DoxyReturn}
+\Hypertarget{classmatrix_a24c54954e216cb172b27ff8e12fe5fd8}\index{matrix@{matrix}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classmatrix_a24c54954e216cb172b27ff8e12fe5fd8} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& matrix\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmatrix}{matrix}} \&}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Mno¿y dwie macierze. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Druga macierz. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wynik mno¿enia jako nowy obiekt {\ttfamily matrix}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Jeœli rozmiary macierzy s¹ niezgodne. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classmatrix_acd9b9ed9da0ebab5e510dd93eaeed60c}\index{matrix@{matrix}!operator+@{operator+}}
+\index{operator+@{operator+}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classmatrix_acd9b9ed9da0ebab5e510dd93eaeed60c} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& matrix\+::operator+ (\begin{DoxyParamCaption}\item[{int}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje liczbê do wszystkich elementów macierzy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Liczba do dodania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wynik operacji jako nowy obiekt {\ttfamily matrix}. 
+\end{DoxyReturn}
+\Hypertarget{classmatrix_a8326ab4e1686f57ab59a6700a583c2f9}\index{matrix@{matrix}!operator+@{operator+}}
+\index{operator+@{operator+}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classmatrix_a8326ab4e1686f57ab59a6700a583c2f9} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& matrix\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classmatrix}{matrix}} \&}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Operatory matematyczne. 
+
+Dodaje dwie macierze. 
+\begin{DoxyParams}{Parameters}
+{\em m} & Druga macierz. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wynik dodawania jako nowy obiekt {\ttfamily matrix}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Jeœli rozmiary macierzy s¹ ró¿ne. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classmatrix_abe176d9d9951a3e2c0cf9333ec6c56d9}\index{matrix@{matrix}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily \label{classmatrix_abe176d9d9951a3e2c0cf9333ec6c56d9} 
+bool matrix\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmatrix}{matrix}} \&}]{m}{}\end{DoxyParamCaption}) const}
+
+
+
+Porównuje, czy macierz jest mniejsza od innej. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Druga macierz. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} jeœli macierz jest mniejsza, {\ttfamily false} w przeciwnym razie. 
+\end{DoxyReturn}
+\Hypertarget{classmatrix_a7300ee81b33a8e8b64ef9ab80ef362ea}\index{matrix@{matrix}!operator==@{operator==}}
+\index{operator==@{operator==}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{classmatrix_a7300ee81b33a8e8b64ef9ab80ef362ea} 
+bool matrix\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmatrix}{matrix}} \&}]{m}{}\end{DoxyParamCaption}) const}
+
+
+
+Porównuje, czy dwie macierze s¹ równe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Druga macierz. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} jeœli macierze s¹ równe, {\ttfamily false} w przeciwnym razie. 
+\end{DoxyReturn}
+\Hypertarget{classmatrix_aca1131395754db9c051b30ed7dfb4c9a}\index{matrix@{matrix}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily \label{classmatrix_aca1131395754db9c051b30ed7dfb4c9a} 
+bool matrix\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmatrix}{matrix}} \&}]{m}{}\end{DoxyParamCaption}) const}
+
+
+
+Porównuje, czy macierz jest wiêksza od innej. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Druga macierz. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} jeœli macierz jest wiêksza, {\ttfamily false} w przeciwnym razie. 
+\end{DoxyReturn}
+\Hypertarget{classmatrix_a94ef42c920c59a1646ba53ed99335c3f}\index{matrix@{matrix}!pokaz@{pokaz}}
+\index{pokaz@{pokaz}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{pokaz()}{pokaz()}}
+{\footnotesize\ttfamily \label{classmatrix_a94ef42c920c59a1646ba53ed99335c3f} 
+int matrix\+::pokaz (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Pobiera wartoœæ z okreœlonej komórki macierzy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Indeks wiersza. \\
+\hline
+{\em y} & Indeks kolumny. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartoœæ z komórki {\ttfamily }(x, y). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & Jeœli indeksy s¹ poza zakresem.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Indeks wiersza. \\
+\hline
+{\em y} & Indeks kolumny. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartoœæ w komórce {\ttfamily }(x, y). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & Jeœli podano indeks poza zakresem. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classmatrix_a31963b63c69325251b6c13f8255d9f41}\index{matrix@{matrix}!wstaw@{wstaw}}
+\index{wstaw@{wstaw}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{wstaw()}{wstaw()}}
+{\footnotesize\ttfamily \label{classmatrix_a31963b63c69325251b6c13f8255d9f41} 
+\mbox{\hyperlink{classmatrix}{matrix}} \& matrix\+::wstaw (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{wartosc}{}\end{DoxyParamCaption})}
+
+
+
+Wstawia wartoœæ do okreœlonej komórki macierzy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Indeks wiersza. \\
+\hline
+{\em y} & Indeks kolumny. \\
+\hline
+{\em wartosc} & Wartoœæ do wstawienia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do obiektu {\ttfamily matrix}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & Jeœli indeksy s¹ poza zakresem.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Indeks wiersza. \\
+\hline
+{\em y} & Indeks kolumny. \\
+\hline
+{\em wartosc} & Wartoœæ do wstawienia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do obiektu {\ttfamily matrix}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & Jeœli podano indeks poza zakresem. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classmatrix_a3d61d0efa79c5e52a7a5b22bfd140571}\index{matrix@{matrix}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classmatrix_a3d61d0efa79c5e52a7a5b22bfd140571} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classmatrix}{matrix}} \&}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Wypisuje zawartoœæ macierzy na strumieñ wyjœciowy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Strumieñ wyjœciowy. \\
+\hline
+{\em m} & Macierz do wypisania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do strumienia wyjœciowego.
+\end{DoxyReturn}
+Operator wypisywania macierzy do strumienia. 
+\begin{DoxyParams}{Parameters}
+{\em os} & Strumieñ wyjœciowy. \\
+\hline
+{\em m} & Macierz do wypisania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do strumienia wyjœciowego. 
+\end{DoxyReturn}
+\Hypertarget{classmatrix_a3d61d0efa79c5e52a7a5b22bfd140571}\index{matrix@{matrix}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!matrix@{matrix}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classmatrix_a3d61d0efa79c5e52a7a5b22bfd140571} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classmatrix}{matrix}} \&}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operatory. 
+
+Wypisuje zawartoœæ macierzy na strumieñ wyjœciowy.
+
+Operator wypisywania macierzy do strumienia. 
+\begin{DoxyParams}{Parameters}
+{\em os} & Strumieñ wyjœciowy. \\
+\hline
+{\em m} & Macierz do wypisania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencja do strumienia wyjœciowego. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Zadanie4/\mbox{\hyperlink{matrix_8h}{matrix.\+h}}\item 
+Zadanie4/NagÅ‚Ã³wek1.\+h\item 
+Zadanie4/\mbox{\hyperlink{matrix_8cpp}{matrix.\+cpp}}\end{DoxyCompactItemize}
